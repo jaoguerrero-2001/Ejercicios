@@ -1,0 +1,48 @@
+class computer:
+   
+    def __init__(self, color, marca, modelo, precio):
+        self.color = color
+        self.marca = marca
+        self.modelo = modelo
+        self.precio = precio
+
+ 
+    def encender(self):
+        print("El color de la computadora es:", self.color)
+
+
+laptop1 = computer("negra", "lenovo", "ideapad 3", 500)
+laptop1.encender()
+
+# Clase hija (Nota: corregí el nombre de 'laptap' a 'laptop' por buena práctica)
+class laptop(computer):
+    
+    def __init__(self, color, marca, modelo, precio, peso):
+        # super().__init__ se encarga de heredar y asignar color, marca, modelo y precio
+        super().__init__(color, marca, modelo, precio)
+        self.peso = peso 
+        # NOTA: Eliminé las asignaciones repetidas de self.color, self.marca, etc. 
+        
+
+    def mostrar_peso(self):
+        print("El peso de la laptop es:", self.peso)
+
+    def mostrar_color(self):
+        print("El color de la laptop es:", self.color)
+
+    def mostrar_marca(self):
+        print("La marca de la laptop es:", self.marca)
+
+    def mostrar_modelo(self):
+        print("El modelo de la laptop es:", self.modelo)
+
+    def mostrar_precio(self):
+        print("El precio de la laptop es:", self.precio)
+
+# Instancia de la clase hija
+laptop2 = laptop("rojo", "hp", "pavilion", 700, "1.7 kg")
+laptop2.mostrar_peso()
+laptop2.mostrar_color()
+laptop2.mostrar_marca()
+laptop2.mostrar_modelo()
+laptop2.mostrar_precio()
