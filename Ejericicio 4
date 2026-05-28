@@ -1,0 +1,12 @@
+class Libro:
+    def __init__(self, titulo, autor, genero, paginas):
+        self.titulo = titulo
+        self.autor = autor
+        self.genero = genero
+        self.paginas = paginas
+
+    def descripcion(self):
+        print(f"'{self.titulo}' de {self.autor}, género {self.genero}, {self.paginas} páginas.")
+
+libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", "Realismo mágico", 471)
+libro1.descripcion()
