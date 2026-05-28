@@ -1,0 +1,12 @@
+class Hamburguesa:
+    def __init__(self, tipo_carne, tamaño, ingredientes, precio):
+        self.tipo_carne = tipo_carne
+        self.tamaño = tamaño
+        self.ingredientes = ingredientes
+        self.precio = precio
+
+    def mostrar_menu(self):
+        print(f"Hamburguesa de {self.tipo_carne}, tamaño {self.tamaño}, con {self.ingredientes}. Precio: ${self.precio}")
+
+hamb1 = Hamburguesa("Res", "Grande", "queso, lechuga, tomate", 5)
+hamb1.mostrar_menu()
