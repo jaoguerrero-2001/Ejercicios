@@ -1,0 +1,12 @@
+class Celular:
+    def __init__(self, marca, modelo, color, precio):
+        self.marca = marca
+        self.modelo = modelo
+        self.color = color
+        self.precio = precio
+
+    def mostrar_info(self):
+        print(f"Celular {self.marca} {self.modelo}, color {self.color}, precio ${self.precio}")
+
+cel1 = Celular("Samsung", "Galaxy S21", "Negro", 800)
+cel1.mostrar_info()
