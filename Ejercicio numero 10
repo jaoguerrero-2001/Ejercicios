@@ -1,0 +1,12 @@
+class Bicicleta:
+    def __init__(self, marca, tipo, color, precio):
+        self.marca = marca
+        self.tipo = tipo
+        self.color = color
+        self.precio = precio
+
+    def pedalear(self):
+        print(f"La bicicleta {self.marca} de tipo {self.tipo} está siendo pedaleada.")
+
+bici1 = Bicicleta("Giant", "Montaña", "Azul", 600)
+bici1.pedalear()
