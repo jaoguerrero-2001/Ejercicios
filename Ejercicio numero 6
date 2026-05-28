@@ -1,0 +1,12 @@
+class Videojuego:
+    def __init__(self, nombre, genero, plataforma, precio):
+        self.nombre = nombre
+        self.genero = genero
+        self.plataforma = plataforma
+        self.precio = precio
+
+    def jugar(self):
+        print(f"Jugando {self.nombre} en {self.plataforma}")
+
+juego1 = Videojuego("Minecraft", "Sandbox", "PC", 30)
+juego1.jugar()
