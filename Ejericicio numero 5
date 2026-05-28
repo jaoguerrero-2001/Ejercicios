@@ -1,0 +1,12 @@
+class Casa:
+    def __init__(self, direccion, habitaciones, baños, precio):
+        self.direccion = direccion
+        self.habitaciones = habitaciones
+        self.baños = baños
+        self.precio = precio
+
+    def mostrar_precio(self):
+        print(f"La casa en {self.direccion} cuesta ${self.precio}")
+
+casa1 = Casa("Av. Siempre Viva 123", 3, 2, 120000)
+casa1.mostrar_precio()
