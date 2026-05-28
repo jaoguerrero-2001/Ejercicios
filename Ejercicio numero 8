@@ -1,0 +1,12 @@
+class Avion:
+    def __init__(self, modelo, capacidad, aerolinea, velocidad):
+        self.modelo = modelo
+        self.capacidad = capacidad
+        self.aerolinea = aerolinea
+        self.velocidad = velocidad
+
+    def despegar(self):
+        print(f"El avión {self.modelo} de {self.aerolinea} está despegando a {self.velocidad} km/h.")
+
+avion1 = Avion("Boeing 747", 400, "KLM", 900)
+avion1.despegar()
