@@ -1,0 +1,12 @@
+class Auto:
+    def __init__(self, marca, modelo, año, precio):
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+        self.precio = precio
+
+    def encender(self):
+        print(f"El {self.marca} {self.modelo} está encendido.")
+
+auto1 = Auto("Toyota", "Corolla", 2022, 20000)
+auto1.encender()
